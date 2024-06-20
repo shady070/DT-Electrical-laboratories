@@ -26,7 +26,6 @@ const ImageBox = () => {
   return (
     <motion.div className='relative w-[320px] h-[380px] lg:w-[636px] lg:h-[434px]'>
       <div className='w-full h-full overflow-hidden rounded-[12px] border-l-[2px] border-white border-t-[2px]'>
-        {/* Replace <img> with <Image> from next/image */}
         <Image
           src={images[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
