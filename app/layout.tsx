@@ -9,7 +9,6 @@ import Link from "next/link";
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '700', '300'], // Customize weights as needed
-  styles: 'ital,wght@0,400;0,700;1,400;1,700',
 });
 
 const playfairDisplaySC = Playfair_Display_SC({

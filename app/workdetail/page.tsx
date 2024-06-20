@@ -76,7 +76,7 @@ const SolarInstallation = () => {
           <h1 className="lg:w-[698px] text-center">Reliable and Efficient Solar Solution</h1>
         </div>
         <div>
-          <p className="text-[12px] lg:text-[20px] italic lg:w-[834px] text-center">I recently hired DT Electrical Laboratories for the installation of an on/off grid solar and inverter system, and I am extremely satisfied with the results. The setup includes 8 high-capacity solar panels and a Hubble battery, providing us with reliable power for our essential appliances like the fridge, TV, and lights. The 6.2kVA inverter works perfectly, ensuring we have continuous power even during outages. The installation was handled professionally, and the team&apos;s attention to detail was impressive. I highly recommend DT Electrical Laboratories for their expertise and excellent service. This solar system has significantly improved our energy independence and peace of mind.</p>
+          <p className="text-[12px] lg:text-[20px] italic lg:w-[834px] text-center">I recently hired DT Electrical Laboratories for the installation of an on/off grid solar and inverter system, and I am extremely satisfied with the results. The setup includes 8 high-capacity solar panels and a Hubble battery, providing us with reliable power for our essential appliances like the fridge, TV, and lights. The 6.2kVA inverter works perfectly, ensuring we have continuous power even during outages. The installation was handled professionally, and the teams attention to detail was impressive. I highly recommend DT Electrical Laboratories for their expertise and excellent service. This solar system has significantly improved our energy independence and peace of mind.</p>
         </div>
       </div>
     </div>

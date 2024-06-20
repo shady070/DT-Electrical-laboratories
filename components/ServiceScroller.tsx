@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link';
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 // Define an array of objects with the data for each box
 const services = [
@@ -46,7 +47,13 @@ const ServiceScroller = ({ buttonText, title, imageUrl }) => {
   return (
     <div className='min-w-[270px] px-[20px]'>
       <div className='h-[160px] w-[270px] rounded-t-lg border-l-[5px] flex items-center justify-center relative overflow-hidden'>
-        <img src={imageUrl} alt={title} className="absolute inset-0 w-full h-full object-cover opacity-50" />
+      <Image
+          src={imageUrl}
+          alt={title}
+          layout='fill' // Use 'fill' to stretch image within its container
+          objectFit='cover' // Maintain aspect ratio and cover container
+          className='absolute inset-0 opacity-50' // Style for opacity and positioning
+        />
         <Link href="tel:+27731128948"><button className="w-[87px] h-[35px] bg-[#B4BF6A] rounded-full drop-shadow-lg text-[12px] z-10">{buttonText}</button></Link> 
       </div>
       <div className="h-[66px] bg-[#6F7E70] rounded-b-lg border-l-[5px] border-b-[2px]">
