@@ -12,10 +12,10 @@ const Testimonials = () => {
         <h1 className={`${playfairDisplaySC.className} lg:text-[138px] text-[50px]`}>“</h1>
     </div>
     <div className="lg:text-[36px] ">
-        <h1 className="lg:w-[698px] text-center">I feel confident and empowered in my home's electrical safety.</h1>
+        <h1 className="lg:w-[698px] text-center">I feel confident and empowered in my home&apos;s electrical safety.</h1>
     </div>
     <div>
-        <p className="text-[12px] lg:text-[20px] italic lg:w-[834px] text-center ">Before, I was struggling with constant electrical issues in my home, and it made me feel frustrated and anxious. Now, with DT Electrical Laboratories' expert services, I've resolved all my electrical problems and enjoy peace of mind knowing my home is safe and efficient.</p>
+        <p className="text-[12px] lg:text-[20px] italic lg:w-[834px] text-center ">Before, I was struggling with constant electrical issues in my home, and it made me feel frustrated and anxious. Now, with DT Electrical Laboratories&apos; expert services, I&apos;ve resolved all my electrical problems and enjoy peace of mind knowing my home is safe and efficient.</p>
     </div>
     </div>
   )

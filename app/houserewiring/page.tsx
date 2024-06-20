@@ -1,8 +1,7 @@
 'use client'
 import { Playfair_Display_SC } from "next/font/google"
 import React, { useState, useEffect } from 'react';
-import { motion } from "framer-motion"
-
+import Image from 'next/image';
 
 const images = [
   '/rewire1.jpeg',
@@ -19,7 +18,7 @@ const playfairDisplaySC = Playfair_Display_SC({
   weight: ['400', '700'],
 });
 
-const houserewiring = () => {
+const HouseRewiring = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -38,9 +37,11 @@ const houserewiring = () => {
       </div>
       <div className="lg:flex lg:mb-[140px]">
         <div className="mx-[22px] lg:mx-[85px] h-[202px] my-[24px] rounded-lg">
-          <img
+          <Image
           src={images[currentIndex]} 
           alt={`Slide ${currentIndex + 1}`} 
+          width={523}
+          height={383}
           className='w-full lg:w-[523px] lg:h-[383px]  h-full object-cover transition-all duration-1000 rounded-lg'
           />
         </div>
@@ -51,9 +52,11 @@ const houserewiring = () => {
       </div>
       <div className="lg:flex lg:flex-row-reverse ">
       <div className="mx-[22px] lg:mx-[85px] h-[202px] my-[24px] rounded-lg">
-          <img
+          <Image
           src={imagev1[currentIndex]} 
           alt={`Slide ${currentIndex + 1}`} 
+          width={523}
+          height={383}
           className='w-full lg:w-[523px] lg:h-[383px] h-full object-cover transition-all duration-1000 rounded-lg'
           />
       </div>
@@ -80,4 +83,4 @@ const houserewiring = () => {
   );
 }
 
-export default houserewiring;
+export default HouseRewiring;

@@ -18,7 +18,7 @@ const playfairDisplaySC = Playfair_Display_SC({
 });
 
 export const metadata: Metadata = {
-  title: "DT Electrical laboratories",
+  title: "DT Electrical Laboratories",
   description: "THE ELECTRICIAN YOU NEED",
 };
 
