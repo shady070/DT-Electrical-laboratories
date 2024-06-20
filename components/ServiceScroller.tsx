@@ -1,10 +1,16 @@
-'use client'
+"use client"
 import Link from 'next/link';
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-// Define an array of objects with the data for each box
-const services = [
+interface Service {
+  id: number;
+  buttonText: string;
+  title: string;
+  imageUrl: string;
+}
+
+const services: Service[] = [
   {
     id: 1,
     buttonText: "Let's Talk",
@@ -43,18 +49,24 @@ const services = [
   },
 ];
 
-const ServiceScroller = ({ buttonText, title, imageUrl }) => {
+interface ServiceScrollerProps {
+  buttonText: string;
+  title: string;
+  imageUrl: string;
+}
+
+const ServiceScroller: React.FC<ServiceScrollerProps> = ({ buttonText, title, imageUrl }) => {
   return (
     <div className='min-w-[270px] px-[20px]'>
       <div className='h-[160px] w-[270px] rounded-t-lg border-l-[5px] flex items-center justify-center relative overflow-hidden'>
-      <Image
+        <Image
           src={imageUrl}
           alt={title}
           layout='fill' // Use 'fill' to stretch image within its container
           objectFit='cover' // Maintain aspect ratio and cover container
           className='absolute inset-0 opacity-50' // Style for opacity and positioning
         />
-        <Link href="tel:+27731128948"><button className="w-[87px] h-[35px] bg-[#B4BF6A] rounded-full drop-shadow-lg text-[12px] z-10">{buttonText}</button></Link> 
+        <Link href="tel:+27731128948"><button className="w-[87px] h-[35px] bg-[#B4BF6A] rounded-full drop-shadow-lg text-[12px] z-10">{buttonText}</button></Link>
       </div>
       <div className="h-[66px] bg-[#6F7E70] rounded-b-lg border-l-[5px] border-b-[2px]">
         <h1 className="w-[250px] text-[16px] text-white py-[10px] px-[10px]">{title}</h1>
@@ -82,10 +94,10 @@ const Services = () => {
           style={{ transform: `translateX(-${currentIndex * 310}px)` }}
         >
           {services.map(service => (
-            <ServiceScroller 
-              key={service.id} 
-              buttonText={service.buttonText} 
-              title={service.title} 
+            <ServiceScroller
+              key={service.id}
+              buttonText={service.buttonText}
+              title={service.title}
               imageUrl={service.imageUrl}
             />
           ))}
