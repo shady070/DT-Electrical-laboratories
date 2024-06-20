@@ -1,5 +1,5 @@
-'use client'
-import { Playfair_Display_SC } from "next/font/google"
+'use client';
+import { Playfair_Display_SC } from "next/font/google";
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
@@ -12,7 +12,7 @@ const imagev1 = [
   '/solar4.jpeg',
   '/solar5.jpeg',
   '/solar6.jpeg'
-]
+];
 const playfairDisplaySC = Playfair_Display_SC({
   subsets: ['latin'],
   weight: ['400', '700'],
@@ -65,7 +65,7 @@ const SolarInstallation = () => {
           <p className="text-[14px] lg:text-[20px] my-[20px] text-green font-medium">Solar Panels: <span className="italic text-white">8 panels, each with a capacity of 460 watts, providing substantial power generation.</span></p>
           <p className="text-[14px] lg:text-[20px] my-[20px] text-green font-medium">Inverter: <span className="italic text-white">A 6.2kVA inverter capable of powering essential appliances such as the fridge, TV, lights, and secondary plugs.</span></p>
           <p className="text-[14px] lg:text-[20px] my-[20px] text-green font-medium">Exclusions: <span className="italic text-white"> Stove and geyser were excluded to optimize battery usage.</span></p>
-          <p className="text-[14px] lg:text-[20px] my-[20px] text-green font-medium">Battery Storage:  <span className="italic text-white">A 48V 100Ah Hubble battery for efficient energy storage.</span></p>
+          <p className="text-[14px] lg:text-[20px] my-[20px] text-green font-medium">Battery Storage: <span className="italic text-white">A 48V 100Ah Hubble battery for efficient energy storage.</span></p>
         </div>
       </div>
       <div className="bg-[#F4F4F2] px-[22px] py-[16px] lg:px-[72px] lg:py-[50px] flex flex-col lg:gap-[20px] justify-center items-center">
@@ -76,7 +76,7 @@ const SolarInstallation = () => {
           <h1 className="lg:w-[698px] text-center">Reliable and Efficient Solar Solution</h1>
         </div>
         <div>
-          <p className="text-[12px] lg:text-[20px] italic lg:w-[834px] text-center">I recently hired DT Electrical Laboratories for the installation of an on/off grid solar and inverter system, and I am extremely satisfied with the results. The setup includes 8 high-capacity solar panels and a Hubble battery, providing us with reliable power for our essential appliances like the fridge, TV, and lights. The 6.2kVA inverter works perfectly, ensuring we have continuous power even during outages. The installation was handled professionally, and the team's attention to detail was impressive. I highly recommend DT Electrical Laboratories for their expertise and excellent service. This solar system has significantly improved our energy independence and peace of mind.</p>
+          <p className="text-[12px] lg:text-[20px] italic lg:w-[834px] text-center">I recently hired DT Electrical Laboratories for the installation of an on/off grid solar and inverter system, and I am extremely satisfied with the results. The setup includes 8 high-capacity solar panels and a Hubble battery, providing us with reliable power for our essential appliances like the fridge, TV, and lights. The 6.2kVA inverter works perfectly, ensuring we have continuous power even during outages. The installation was handled professionally, and the team&apos;s attention to detail was impressive. I highly recommend DT Electrical Laboratories for their expertise and excellent service. This solar system has significantly improved our energy independence and peace of mind.</p>
         </div>
       </div>
     </div>
