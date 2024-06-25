@@ -5,9 +5,9 @@ import Image from 'next/image'; // Import Image component from next/image
 
 // Define array of images
 const images = [
-  '/1img.png',
-  '/2img.png',
-  '/3img.png'
+  '/p1.jpeg',
+  '/p2.jpeg',
+  '/p3.jpeg'
 ];
 
 // ImageBox component
