@@ -47,6 +47,12 @@ const services: Service[] = [
     title: "General Maintenance",
     imageUrl: "/service6.png"
   },
+    {
+    id: 7,
+    buttonText: "Let's Talk",
+    title: "Solar Installation",
+    imageUrl: "/solar1.jpeg"
+  },
 ];
 
 interface ServiceScrollerProps {
